@@ -78,7 +78,7 @@ class User extends Authenticatable
             $item_id_exists = $this->want_items()->where('item_id', $itemIdOrCode)->exists();
             return $item_id_exists;
         }else{
-            $item_code_exists = $this->want_items()->where('Code', $itemIdOrCode)->exists();
+            $item_code_exists = $this->want_items()->where('code', $itemIdOrCode)->exists();
             return $item_code_exists;
         }
     }
